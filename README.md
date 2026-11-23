@@ -92,26 +92,6 @@ npm run test:browser -- --screenshots
 
 A suíte de navegador usa Chrome, Chromium ou Edge em modo headless. Para indicar outro caminho, configure a variável de ambiente `BROWSER_PATH`. O último comando atualiza as capturas do README.
 
-| Verificação executada | Resultado |
-| --- | --- |
-| Seis testes unitários em Node.js 24 | Passaram. Cobrem campos obrigatórios, opções inválidas, limites de data, calendário local e formatação do resumo. |
-| Chrome headless em 320, 375, 768, 1024 e 1440 px | Passou. Verificou ausência de rolagem horizontal, adaptação de navegação e hero, e movimento reduzido. As três capturas foram revisadas visualmente. |
-| Interações em Chrome headless | Passaram. Âncoras, seção ativa, menu por teclado, FAQ, modal, fechamento, foco, seleção dos serviços, erros de formulário, dados de exemplo, bloqueio de duplicidade e nova simulação. |
-| Cópia do resumo | Passou com a API da área de transferência simulada nos cenários de sucesso e permissão negada. |
-| Hospedagem estática local no subdiretório | Passou. Destinos internos, caminhos relativos, carregamento e decodificação das imagens, ausência de erros HTTP e JavaScript e ausência de requisições de envio do formulário. |
-| Inspeção de arquivos | A busca por padrões comuns de credenciais não retornou ocorrências nos arquivos do projeto. |
-
-O Lighthouse e os testes em dispositivos físicos ou outros motores de navegador ficaram pendentes.
-
-## Publicação no GitHub Pages
-
-1. Quando autorizado, crie um repositório público chamado `nadani-business-landing` no GitHub e envie os arquivos à branch `main`.
-2. No repositório, abra **Settings → Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**, escolha **main** e **/(root)** e salve.
-4. Após o deploy, abra a URL apresentada em **Settings → Pages** e verifique as imagens, as âncoras e o formulário. O endereço padrão do site de projeto usa o formato `https://<usuário>.github.io/nadani-business-landing/`.
-
-O arquivo `.nojekyll` e os caminhos relativos permitem publicar a raiz do projeto como arquivos estáticos. Consulte a [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
 ### About do repositório
 
 > Premium responsive business landing page built with HTML, CSS and JavaScript. Portfolio demonstration by Nadani Productions.
