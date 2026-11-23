@@ -47,7 +47,6 @@ nadani-business-landing/
 ├── tests/
 ├── tools/serve.mjs
 ├── package.json
-├── .nojekyll
 ├── README.md
 └── LICENSE
 ```
