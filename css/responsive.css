@@ -1,0 +1,34 @@
+@media (min-width: 35rem) {
+  .container { width: min(100% - 3.5rem, 76rem); }
+  .services-grid, .gallery-grid, .form-grid, .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wide { grid-column: 1 / -1; }
+}
+@media (min-width: 48rem) {
+  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(1.6rem, 5vw, 5rem); }
+  .hero h1 { font-size: clamp(3.15rem, 6.05vw, 5.25rem); }
+  .hero-art { border-radius: 48% 48% 1rem 1rem / 42% 42% 1rem 1rem; padding: .55rem; }
+  .hero-art img { border-radius: 48% 48% .55rem .55rem / 42% 42% .55rem .55rem; }
+  .about-inner, .faq-inner, .contact { grid-template-columns: 1fr 1fr; gap: clamp(2rem, 7vw, 6rem); align-items: start; }
+  .services-grid, .features-grid, .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 58rem) {
+  .booking-inner { grid-template-columns: .85fr 1.15fr; gap: clamp(1.6rem, 5vw, 4rem); align-items: start; }
+  .header-inner { flex-wrap: nowrap; }
+  .menu-ready .menu-toggle { display: none; }
+  .site-header nav, .menu-ready nav, .menu-ready nav.is-open { display: flex; padding: 0; position: static; border: 0; background: transparent; box-shadow: none; max-height: none; overflow: visible; }
+  .menu-ready nav a:not(.button) { padding-inline: 0; }
+  .menu-ready .header-cta { margin-top: 0; }
+  .footer-grid { grid-template-columns: 1.2fr .75fr 1fr 1fr; }
+}
+@media (min-width: 72rem) {
+  .services-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .service-bottom .button { flex: 1; }
+  .service-bottom .price { min-width: 100%; }
+}
+@media (max-width: 26rem) {
+  .hero .actions { align-items: stretch; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

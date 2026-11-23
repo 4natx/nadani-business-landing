@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pata &amp; Pelo Studio, uma demonstração de site para serviços de banho, tosa e cuidados de cães e gatos.">
+  <meta name="theme-color" content="#faf6ed">
+  <title>Pata &amp; Pelo Studio | Banho, tosa e cuidado pet</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio"><img src="./assets/icons/favicon.svg" width="46" height="46" alt=""><span>Pata &amp; Pelo<small>STUDIO</small></span></a>
+      <button class="menu-toggle icon-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#menu"></use></svg></button>
+      <nav id="nav" aria-label="Navegação principal">
+        <a href="#sobre">O estúdio</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a>
+        <a class="button primary header-cta" href="#agendamento">Agendar visita</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Banho &amp; tosa boutique</p>
+        <h1 id="hero-title">Cuidado que dá <em>gosto de sentir.</em></h1>
+        <p class="hero-description">Banho, tosa e cuidados para cães e gatos, em um ambiente acolhedor que respeita o ritmo de cada pet.</p>
+        <div class="actions">
+          <a class="button primary" href="#agendamento"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#calendar"></use></svg> Solicitar agendamento</a>
+          <a class="button outline" href="#servicos">Conhecer serviços</a>
+        </div>
+        <p class="demo-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#paw"></use></svg> Projeto demonstrativo · Estabelecimento fictício</p>
+      </div>
+      <figure class="hero-art">
+        <img src="./assets/images/portrait.svg" width="720" height="780" alt="Ilustração de um golden retriever com lenço verde, em fundo terracota" fetchpriority="high">
+      </figure>
+    </section>
+    <section class="about section" id="sobre" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="section-intro"><p class="eyebrow"><span></span> O estúdio</p><h2 id="about-title">Cada pet tem seu próprio ritmo.</h2><p>O Pata &amp; Pelo Studio imagina uma rotina de banho e tosa em que o animal tem espaço para se adaptar e o tutor pode explicar o que faz diferença no cuidado.</p></div>
+        <div class="about-values"><article class="value"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#heart"></use></svg></div><div><h3>Acolhimento desde a chegada</h3><p>Um momento de adaptação ajuda o pet a se familiarizar com o ambiente.</p></div></article>
+          <article class="value"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#paw"></use></svg></div><div><h3>Atenção individual</h3><p>O porte, a pelagem e o temperamento orientam cada sessão.</p></div></article>
+          <article class="value"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#leaf"></use></svg></div><div><h3>Conforto durante o cuidado</h3><p>Manuseio delicado e pausas respeitam os sinais do animal.</p></div></article></div>
+      </div>
+    </section>
+    <section class="section container services-section" id="servicos" aria-labelledby="services-title">
+      <div class="section-intro"><p class="eyebrow"><span></span> Serviços</p><h2 id="services-title">Cuidados para cada pelagem.</h2><p>Escolha um serviço para preencher a solicitação. Os valores são exemplos fictícios.</p></div>
+      <div class="services-grid"><article class="service-card"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#bath"></use></svg></div><h3>Banho completo</h3><p>Limpeza, secagem e escovação no ritmo do seu pet.</p><div class="service-bottom"><div class="price"><small>A partir de</small><strong>R$ 65</strong></div><a class="button outline service-link" href="#agendamento" data-service="banho" aria-label="Solicitar banho completo">Solicitar</a></div></article>
+        <article class="service-card"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#scissors"></use></svg></div><h3>Tosa higiênica</h3><p>Aparo nas regiões que pedem manutenção entre as tosas.</p><div class="service-bottom"><div class="price"><small>A partir de</small><strong>R$ 45</strong></div><a class="button outline service-link" href="#agendamento" data-service="tosa-higienica" aria-label="Solicitar tosa higiênica">Solicitar</a></div></article>
+        <article class="service-card"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#sparkle"></use></svg></div><h3>Tosa personalizada</h3><p>Corte pensado para a pelagem, a rotina e o conforto do animal.</p><div class="service-bottom"><div class="price"><small>A partir de</small><strong>R$ 95</strong></div><a class="button outline service-link" href="#agendamento" data-service="tosa-personalizada" aria-label="Solicitar tosa personalizada">Solicitar</a></div></article>
+        <article class="service-card"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#drop"></use></svg></div><h3>Hidratação da pelagem</h3><p>Cuidado complementar para ajudar a manter os fios macios.</p><div class="service-bottom"><div class="price"><small>A partir de</small><strong>R$ 55</strong></div><a class="button outline service-link" href="#agendamento" data-service="hidratacao" aria-label="Solicitar hidratação da pelagem">Solicitar</a></div></article>
+        <article class="service-card"><div class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#paw"></use></svg></div><h3>Cuidados especiais</h3><p>Sessão adaptada às sensibilidades e necessidades do seu pet.</p><div class="service-bottom"><div class="price"><strong>Sob consulta</strong></div><a class="button outline service-link" href="#agendamento" data-service="cuidados" aria-label="Solicitar cuidados especiais">Solicitar</a></div></article></div>
+    </section>
+    <section class="features section" id="diferenciais" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-intro"><p class="eyebrow"><span></span> Diferenciais</p><h2 id="features-title">O que faz parte da sessão.</h2></div>
+        <div class="features-grid"><article><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#leaf"></use></svg><h3>Produtos adequados</h3><p>A escolha considera o tipo de pelagem e as sensibilidades informadas pelo tutor.</p></article>
+          <article><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#clock"></use></svg><h3>Tempo para se adaptar</h3><p>A sessão pode incluir pausas e ajustes conforme a reação do pet.</p></article>
+          <article><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#calendar"></use></svg><h3>Preferências em um só lugar</h3><p>Escolha o serviço, a data e o período e revise o resumo ao concluir a simulação.</p></article></div>
+      </div>
+    </section>
+    <section class="section container gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="section-intro"><p class="eyebrow"><span></span> Galeria</p><h2 id="gallery-title">Um olhar sobre o estúdio.</h2><p>Ilustrações originais do conceito Pata &amp; Pelo.</p></div>
+      <div class="gallery-grid"><figure><a class="gallery-open" href="./assets/images/bath.svg" aria-label="Ampliar ilustração: Um banho tranquilo"><img src="./assets/images/bath.svg" width="640" height="480" loading="lazy" alt="Cão de orelhas caídas em uma banheira com espuma e toalha verde"><span class="icon-button"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#zoom"></use></svg></span></a><figcaption>Um banho tranquilo</figcaption></figure>
+        <figure><a class="gallery-open" href="./assets/images/cat.svg" aria-label="Ampliar ilustração: No ritmo dos felinos"><img src="./assets/images/cat.svg" width="640" height="480" loading="lazy" alt="Gato alaranjado de olhos fechados, com um lenço terracota"><span class="icon-button"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#zoom"></use></svg></span></a><figcaption>No ritmo dos felinos</figcaption></figure>
+        <figure><a class="gallery-open" href="./assets/images/tools.svg" aria-label="Ampliar ilustração: Cuidado nos detalhes"><img src="./assets/images/tools.svg" width="640" height="480" loading="lazy" alt="Toalhas dobradas, frasco e folhagem sobre uma bancada"><span class="icon-button"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#zoom"></use></svg></span></a><figcaption>Cuidado nos detalhes</figcaption></figure></div>
+      <dialog id="gallery-dialog" aria-labelledby="gallery-caption">
+        <div class="dialog-inner">
+          <button class="icon-button gallery-close" type="button" aria-label="Fechar galeria" autofocus><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#close"></use></svg></button>
+          <img class="dialog-image" src="./assets/images/bath.svg" loading="lazy" width="640" height="480" alt="">
+          <h3 id="gallery-caption"></h3>
+          <div class="gallery-controls"><button type="button" class="button outline" id="gallery-prev">Anterior</button><span id="gallery-position" aria-live="polite"></span><button type="button" class="button outline" id="gallery-next">Próxima</button></div>
+        </div>
+      </dialog>
+    </section>
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-inner">
+        <div class="section-intro"><p class="eyebrow"><span></span> Perguntas frequentes</p><h2 id="faq-title">Antes da visita.</h2></div>
+        <div class="faq-list"><details name="studio-faq"><summary>Como solicitar um agendamento? <svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#plus"></use></svg></summary><p>Escolha um serviço e preencha o formulário demonstrativo. Ao concluir, você verá um resumo na própria página. A simulação não reserva horários nem envia mensagens.</p></details>
+          <details name="studio-faq"><summary>Quais informações são necessárias? <svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#plus"></use></svg></summary><p>Use nomes fictícios para o tutor e o pet. Selecione espécie, serviço, data e período. As observações são opcionais.</p></details>
+          <details name="studio-faq"><summary>Como os valores são definidos? <svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#plus"></use></svg></summary><p>Os preços exibidos são exemplos fictícios. Em um atendimento comercial, o valor poderia variar de acordo com porte, pelagem, condição dos fios e serviço escolhido.</p></details>
+          <details name="studio-faq"><summary>Quais serviços estão disponíveis? <svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#plus"></use></svg></summary><p>A demonstração inclui banho completo, tosa higiênica, tosa personalizada, hidratação da pelagem e cuidados especiais.</p></details>
+          <details name="studio-faq"><summary>Como entrar em contato? <svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#plus"></use></svg></summary><p>O Pata &amp; Pelo Studio é fictício e não possui canais comerciais. Você pode visualizar e copiar uma prévia de mensagem no formulário.</p></details></div>
+      </div>
+    </section>
+    <section class="booking section" id="agendamento" aria-labelledby="booking-title">
+      <div class="container booking-inner">
+        <div class="section-intro">
+          <p class="eyebrow"><span></span> Solicitação de agendamento</p>
+          <h2 id="booking-title" tabindex="-1">Planeje o próximo cuidado.</h2>
+          <p>Escolha o serviço e indique quando prefere trazer seu pet. Ao concluir, você poderá revisar e copiar o resumo.</p>
+          <div class="demo-box" id="booking-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#calendar"></use></svg><div><strong>Modo demonstração</strong><p>Use dados fictícios. O resumo fica nesta página até você sair ou iniciar outra simulação. Nenhum dado é enviado.</p></div></div>
+        </div>
+        <div class="booking-card">
+          <form id="booking-form" aria-describedby="booking-note" novalidate>
+            <div class="form-heading"><h3>Dados da solicitação</h3><button type="button" class="text-button" id="fill-example" hidden>Usar dados de exemplo</button></div>
+            <noscript><p>Ative o JavaScript para experimentar o formulário.</p></noscript>
+            <fieldset id="booking-fields" disabled>
+              <legend class="sr-only">Dados do tutor, do pet e do serviço</legend>
+              <p class="form-hint">Todos os campos são obrigatórios, exceto observações.</p>
+              <div class="form-grid">
+                <div class="field"><label for="guardian">Nome do tutor</label><input id="guardian" name="guardian" required maxlength="60" placeholder="Ex. Marina Demo" autocomplete="off"><p class="field-error" id="guardian-error" hidden></p></div>
+                <div class="field"><label for="pet">Nome do animal</label><input id="pet" name="pet" required maxlength="60" placeholder="Ex. Bento" autocomplete="off"><p class="field-error" id="pet-error" hidden></p></div>
+                <div class="field"><label for="species">Tipo de animal</label><select id="species" name="species" required><option value="">Selecione</option><option value="dog">Cão</option><option value="cat">Gato</option></select><p class="field-error" id="species-error" hidden></p></div>
+                <div class="field"><label for="service">Serviço desejado</label><select id="service" name="service" required><option value="">Selecione</option><option value="banho">Banho completo</option><option value="tosa-higienica">Tosa higiênica</option><option value="tosa-personalizada">Tosa personalizada</option><option value="hidratacao">Hidratação da pelagem</option><option value="cuidados">Cuidados especiais</option></select><p class="field-error" id="service-error" hidden></p></div>
+                <div class="field"><label for="date">Data preferida</label><input type="date" id="date" name="date" required><p class="field-error" id="date-error" hidden></p></div>
+                <div class="field"><label for="period">Período preferido</label><select id="period" name="period" required><option value="">Selecione</option><option value="morning">Manhã</option><option value="afternoon">Tarde</option></select><p class="field-error" id="period-error" hidden></p></div>
+                <div class="field wide"><label for="notes">Observações <span>(opcional)</span></label><textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="Ex. Prefere uma pausa durante a secagem."></textarea><p class="field-error" id="notes-error" hidden></p></div>
+              </div>
+              <p id="form-feedback" class="form-feedback" role="status"></p>
+              <button type="submit" class="button primary submit-button">Registrar solicitação de teste</button>
+            </fieldset>
+          </form>
+          <section id="booking-result" aria-labelledby="result-title" hidden>
+            <h3 id="result-title" tabindex="-1">Resumo da simulação</h3>
+            <p class="success-note">Solicitação de demonstração registrada nesta página. Nenhum agendamento real foi realizado.</p>
+            <dl id="result-fields"></dl>
+            <div class="actions"><button type="button" class="button primary" id="copy-summary">Copiar resumo</button><button type="button" class="button outline" id="new-booking">Nova simulação</button></div>
+            <label class="manual-copy" id="manual-copy" hidden>Resumo para cópia manual<textarea readonly rows="6" id="manual-text"></textarea></label>
+            <p id="copy-feedback" class="form-feedback" role="status"></p>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="section container contact" id="contato" aria-labelledby="contact-title">
+      <div class="section-intro"><p class="eyebrow"><span></span> Contato</p><h2 id="contact-title">Horários e atendimento.</h2><p>Este estúdio é fictício. O formulário e a prévia de mensagem permitem experimentar como seria uma solicitação.</p><a href="#agendamento" class="button outline">Voltar ao formulário</a></div>
+      <div class="contact-card"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons/ui.svg#clock"></use></svg><div><h3>Horários de exemplo</h3><dl><div><dt>Terça a sexta</dt><dd>09h–18h</dd></div><div><dt>Sábado</dt><dd>09h–14h</dd></div><div><dt>Domingo e segunda</dt><dd>Fechado</dd></div></dl></div></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="#inicio"><img src="./assets/icons/favicon.svg" width="46" height="46" alt=""><span>Pata &amp; Pelo<small>STUDIO</small></span></a><p>Banho, tosa e cuidados estéticos para cães e gatos.</p></div>
+        <div><h2>Explore</h2><ul><li><a href="#sobre">O estúdio</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#faq">Perguntas frequentes</a></li><li><a href="#contato">Contato</a></li></ul></div>
+        <div><h2>Serviços</h2><ul><li><a href="#agendamento" data-service="banho">Banho completo</a></li><li><a href="#agendamento" data-service="tosa-higienica">Tosa higiênica</a></li><li><a href="#agendamento" data-service="tosa-personalizada">Tosa personalizada</a></li><li><a href="#agendamento" data-service="hidratacao">Hidratação da pelagem</a></li><li><a href="#agendamento" data-service="cuidados">Cuidados especiais</a></li></ul></div>
+        <div><h2>Atendimento demonstrativo</h2><p>Terça a sexta, 09h–18h<br>Sábado, 09h–14h</p><p><a href="#agendamento">Simular atendimento</a></p></div>
+      </div>
+      <div class="footer-bottom"><p>Projeto fictício para portfólio.</p><a href="https://nadani.space">Demo project developed by Nadani Productions</a></div>
+    </div>
+  </footer>
+</body>
+</html>
